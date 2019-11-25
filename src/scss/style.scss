@@ -1,0 +1,210 @@
+@import '_var';
+
+// ==== Press illustration Background ====
+.press-bg {
+    width: 50vw;
+    height: 50vh;
+    @include imgBackground('../img/press/press-bg.svg',contain);
+    margin: auto;
+}
+
+// ==== Latest News Section ====
+
+#latest-news {
+    padding: 0;
+    height: 50vh;
+    position: relative;
+    .container {
+        position: absolute;
+        top: -40vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+        display: flex;
+        // height: 70vh;
+        border-radius: 60px 0 0 0 ;
+        transition: .3s;
+        .side-bar {
+            width: 20%;
+            max-width: 70px;
+            border-radius: 60px 0 0 0 ;
+            background-color:$sun;
+            position: relative;
+            h3 {
+                margin: 0;
+                transform: rotate(270deg);
+                position: absolute;
+                bottom: 10%;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+        }
+        &:hover {
+            transition: .3s;
+            transform: translateY(-5px);
+            box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.25);
+        }
+    }
+}
+
+// ==== Article Block ====
+
+.article-item {
+    width: 100%;
+    height: 100%;
+    // min-height: 70vh;
+    position: relative;
+    display: grid;
+    padding: 40px;
+    cursor: pointer;
+    .article-img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+    h3.article-title {
+        margin: 0;
+        margin-top: 25%;
+        z-index: 1;
+    }
+    p.article-quote {
+        margin-top: 30px;
+        width: 70%;
+        z-index: 1;
+    }
+    img.media-name {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+    label.date {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-weight: bold;
+        text-align: right;
+    }
+
+    // ==== Article Block (SMALL) ====
+    &.small {
+        background: #FFFFFF;
+        box-shadow: 4px 4px 50px rgba(45, 45, 45, 0.1);
+        padding: 16px 16px 0 16px;
+        color:#2d2d2d;
+        transition: .3s;
+        h3.article-title {
+            margin-top: 13%;
+        }
+        img.media-name {
+            position: relative;
+            height: 30px;
+            right: auto;
+            bottom: auto;
+            justify-self: end;
+            padding-bottom: 10px;
+        }
+        p.article-quote {
+            margin: 10px 0px;
+            width: 100%;
+            padding: 0 0 10px 0;
+        }
+        .tag {
+            background:#F4F7F9;
+            padding: 16px;
+            display: flex;
+            margin-left: -16px;
+            margin-right: -16px;
+            span {
+                margin-right: 10px;
+                color:$kashmirBlue;
+            }
+        }
+        &:hover {
+            transition: .3s;
+            text-decoration: none;
+            box-shadow: 4px 14px 30px rgba(45, 45, 45, 0.1);
+            transform: translateY(-5px);
+        }
+    }
+}
+
+// ==== Other Article Section ====
+
+#other-press-article {
+    padding: 0;
+    position: relative;
+    background: linear-gradient(129.76deg, #EEEEEE 10.71%, #F4EBC9 80.01%);
+    .sort-bar {
+        button.btn-outline-azure:hover {
+            background: $secBlue;
+            border: 1px solid $secBlue;
+            color: #ffffff;
+        }
+    }
+    .container {
+        // height: 70vh;
+        position: relative;
+        &:before {
+            content:'';
+            display: block;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            position: absolute;
+            @include imgBackground('../img/press/press-article-bg.svg',60%);
+            z-index: 0;
+        }
+        
+    }
+}
+
+
+
+// ======= RWD Adjustment =======
+
+
+@media only screen and (max-width : 767px) {
+    #latest-news {
+        height: 200px;
+        .container{
+            max-width: 90%;
+            .article-item {
+                
+                h3.article-title {
+                    margin-top: 20%;
+                }
+                p.article-quote {
+                    width: 100%;
+                    font-size:0.8rem;
+                    margin-top: 5%;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width : 480px) {
+    .press-bg {
+        width: 70vw;
+        height: 50vh;
+    }
+    #latest-news {
+        
+        .container .article-item {
+            padding: 5%;
+            img.media-name {
+                height: 30px;
+            }
+        }
+    }
+    
+
+    
+}

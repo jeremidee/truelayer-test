@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Secure, reliable and easy access to banking infrastructure. A complete toolkit for you to build modern financial applications through a delightful experience.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TrueLayer | Powering the new era of financial innovation</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vab5wxr.css">
+    <link rel="stylesheet" href="../../test-trulayer.css">
+    <script src="https://use.typekit.net/vab5wxr.js"></script>
+    <script>try { Typekit.load({ async: true }); } catch (e) { }</script>
+    <script src="../../bundle_base.js"></script>
+    <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}</style>
+    <style type="text/css">@font-face{font-family:tk-proxima-nova-n7;src:url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:tk-proxima-nova-i7;src:url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:tk-proxima-nova-n1;src:url(https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("woff2"),url(https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("woff"),url(https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("opentype");font-weight:100;font-style:normal;}@font-face{font-family:tk-proxima-nova-i1;src:url(https://use.typekit.net/af/c31dbb/00000000000000003b9b305f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3) format("woff2"),url(https://use.typekit.net/af/c31dbb/00000000000000003b9b305f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3) format("woff"),url(https://use.typekit.net/af/c31dbb/00000000000000003b9b305f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3) format("opentype");font-weight:100;font-style:italic;}@font-face{font-family:tk-proxima-nova-n4;src:url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:tk-proxima-nova-i4;src:url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}</style>
+    <style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("woff2"),url(https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("woff"),url(https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n1&v=3) format("opentype");font-weight:100;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/c31dbb/00000000000000003b9b305f/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3) format("woff2"),url(https://use.typekit.net/af/c31dbb/00000000000000003b9b305f/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3) format("woff"),url(https://use.typekit.net/af/c31dbb/00000000000000003b9b305f/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i1&v=3) format("opentype");font-weight:100;font-style:italic;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;}</style>
+</head>
+
+<body>
+    <div id="wrapper">
+
+        <div id="navbarMobile">
+            <a class="navbar-brand" href="/">
+                <img src="../img/truelayer-logo.svg" height="50px">
+            </a>
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li class="menu-item">
+                    <a>
+                        <span>Products</span>
+                        <span class="menu-collapse"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    </a>
+                </li>
+                <ul class="submenu" hidden="">
+                    <li><a href="/data-api" class="submenu-link">Data API</a></li>
+                    <li><a href="/payments-api" class="submenu-link">Payments API</a><span class="beta"></span></li>
+                    <li><a href="/openbanking" class="submenu-link">Open Banking</a></li>
+                    <li><a href="/psd2" class="submenu-link">PSD2</a></li>
+                    <li><a href="/security" class="submenu-link">Security</a></li>
+                </ul>
+                <li class="menu-item">
+                    <a>
+                        <span>Pricing</span>
+                        <span class="menu-collapse"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    </a>
+                </li>
+                <ul class="submenu" hidden="">
+                    <li><a href="/data-api/#pricing-data" class="submenu-link">Data API</a></li>
+                    <li><a href="/payments-api/#pricing-payments" class="submenu-link">Payments API</a></li>
+                </ul>
+                <li class="menu-item">
+                    <a>
+                        <span>Developers</span>
+                        <span class="menu-collapse"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    </a>
+                </li>
+                <ul class="submenu" hidden="">
+                    <li><a href="http://docs.truelayer.com" target="_blank">Documentation</a></li>
+                    <li><a href="https://console.truelayer.com" target="_blank">Console</a></li>
+                    <li><a href="https://demo.truelayer.com" target="_blank">Demo Application</a></li>
+                    <li><a href="https://status.truelayer.com/" target="_blank">Status Page</a></li>
+                </ul>
+                <li class="menu-item">
+                    <a>
+                        <span>Company</span>
+                        <span class="menu-collapse"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    </a>
+                </li>
+                <ul class="submenu" hidden="">
+                    <li><a href="/about" class="submenu-link">About TrueLayer</a></li>
+                    <li><a href="/contact" class="submenu-link"
+                            onclick="ga('send', 'event', 'Contact us', 'Contact us click', 'Mobile navbar', {nonInteraction: true});">Contact
+                            Us</a></li>
+                    <li><a href="https://blog.truelayer.com" target="_blank">Blog</a></li>
+                    <li><a href="https://truelayer.workable.com" target="_blank">Jobs</a></li>
+                </ul>
+                <li class="menu-item">
+                    <a>
+                        <span>Legal</span>
+                        <span class="menu-collapse"><i class="fa fa-caret-down" aria-hidden="true"></i></span>
+                    </a>
+                </li>
+                <ul class="submenu" hidden="">
+                    <li><a href="/privacy" class="submenu-link">Privacy Policy</a></li>
+                    <li><a href="/tos" class="submenu-link">AIS Customer ToS</a></li>
+                    <li><a href="/tos-pis" class="submenu-link">PIS Customer ToS</a></li>
+                    <li><a href="/enduser_tos" class="submenu-link">End User ToS</a></li>
+                </ul>
+                <li><a class="btn btn-outline-white" href="/support">Support</a></li>
+                <li><a class="btn btn-sun" href="https://console.truelayer.com/?auto=login" target="_blank">Log in<i
+                            class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+
+        <div id="navbarMobile-backdrop">
+
+        </div>
+
+        <section id="hero">
+            <div class="hero-img">
+                <!-- <div class="hero-img-logo"></div>
+                <div class="hero-img-shadow"></div>
+                <div class="hero-img-pc"></div> -->
+
+                <!-- Navigation -->
+                <nav class="navbar navbar-expand-lg">
+
+                    <div class="container">
+                        <a class="navbar-brand" href="/">
+                            <img src="../img/truelayer-logo.svg" height="50px">
+                        </a>
+                        <button class="navbar-toggler" type="button" aria-controls="navbarResponsive"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarResponsive">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link nav-link-parent">Products</a>
+                                    <ul class="dropdown-child box-shadow" role="menu">
+                                        <div class="dropdown-arrow"></div>
+                                        <li class="product-dropdown">
+                                            <a href="/data-api" class="nav-product">
+                                                <img src="../img/icons/data-api.svg" alt="Data API" width="70%">
+                                                <span>Data API</span>
+                                                <span class="availability">&nbsp;</span>
+                                            </a>
+                                            <a href="/payments-api" class="nav-product">
+                                                <img src="../img/icons/payments-api.svg" alt="Payments API" width="70%">
+                                                <span class="nav-product-payments beta">Payments API</span>
+                                                <span class="availability">&nbsp;</span>
+                                            </a>
+                                        </li>
+                                        <li class="secondary">
+                                            <a href="/openbanking"><i class="fas fa-file-alt" aria-hidden="true"></i>
+                                                Open Banking</a>
+                                            <a href="/psd2"><i class="fas fa-file-alt" aria-hidden="true"></i> PSD2</a>
+                                            <a href="/security"><i class="fa fa-lock" aria-hidden="true"></i>
+                                                Security</a>
+                                            <a href="#" hidden=""><i class="fa fa-globe" aria-hidden="true"></i> Market
+                                                Coverage</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link nav-link-parent">Pricing</a>
+                                    <ul class="dropdown-child box-shadow" role="menu">
+                                        <div class="dropdown-arrow"></div>
+                                        <li>
+                                            <a href="/data-api/#pricing-data"><i class="fas fa-fingerprint"
+                                                    aria-hidden="true"></i>Data API</a>
+
+                                            <a href="/payments-api/#pricing-payments"><i class="fas fa-pound-sign"
+                                                    aria-hidden="true"></i>Payments API</a>
+
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link nav-link-parent">Developers</a>
+                                    <ul class="dropdown-child box-shadow" role="menu">
+                                        <div class="dropdown-arrow"></div>
+                                        <li>
+                                            <a href="http://docs.truelayer.com" target="_blank"><i class="fa fa-book"
+                                                    aria-hidden="true"></i> Documentation</a>
+                                            <ul>
+                                                <li><a href="https://docs.truelayer.com/#getting-started"
+                                                        target="_blank">Getting started</a> <i
+                                                        class="fa fa-chevron-right" aria-hidden="true"></i></li>
+                                                <li><a href="https://docs.truelayer.com/#access-methods"
+                                                        target="_blank">Access Methods</a> <i
+                                                        class="fa fa-chevron-right" aria-hidden="true"></i></li>
+                                                <li><a href="https://docs.truelayer.com/#data-api-v1"
+                                                        target="_blank">Data API v1</a> <i class="fa fa-chevron-right"
+                                                        aria-hidden="true"></i></li>
+                                                <li><a href="https://docs.truelayer.com/#payments-api-v1"
+                                                        target="_blank">Payments API v1</a> <i
+                                                        class="fa fa-chevron-right" aria-hidden="true"></i></li>
+                                                <li><a href="https://docs.truelayer.com/#status-api-v1"
+                                                        target="_blank">Status API v1</a> <i class="fa fa-chevron-right"
+                                                        aria-hidden="true"></i></li>
+
+                                            </ul>
+                                        </li>
+                                        <li class="secondary">
+                                            <a href="https://console.truelayer.com"><i class="fa fa-code"
+                                                    aria-hidden="true"></i> Console</a>
+                                            <a href="https://demo.truelayer.com" target="_blank"><i
+                                                    class="fa fa-desktop" aria-hidden="true"></i> Demo Application</a>
+                                            <a href="https://status.truelayer.com/" target="_blank"><i
+                                                    class="fas fa-chart-line" aria-hidden="true"></i> Status Page</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link nav-link-parent">Company</a>
+                                    <ul class="dropdown-child box-shadow" role="menu">
+                                        <div class="dropdown-arrow"></div>
+                                        <li>
+                                            <a href="/about"><i class="fa fa-building" aria-hidden="true"></i> About
+                                                TrueLayer</a>
+                                            <a href="/contact"><i class="fa fa-envelope" aria-hidden="true"
+                                                    onclick="ga('send', 'event', 'Contact us', 'Contact us click', 'Navbar', {nonInteraction: true});"></i>Contact
+                                                us</a>
+                                            <a href="https://blog.truelayer.com/" target="_blank"><i
+                                                    class="fas fa-pencil-alt" aria-hidden="true"></i> Blog</a>
+                                        </li>
+                                        <li class="secondary">
+
+                                            <a href="https://truelayer.workable.com" target="_blank">
+                                                <i class="far fa-hand-peace" aria-hidden="true"></i> We are hiring!</a>
+                                            <p class="menu-text">TrueLayer is always looking for passionate individuals.
+                                                Join our team to make a difference and shape the new era of financial
+                                                innovation.</p>
+                                            <ul>
+                                                <li>
+                                                    <a href="https://truelayer.workable.com" target="_blank">See open
+                                                        positions</a> <i class="fa fa-chevron-right"
+                                                        aria-hidden="true"></i>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item support-padding">
+                                    <a class="btn btn-outline-white" href="http://support.truelayer.com"
+                                        target="_blank">Support</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-white" href="https://console.truelayer.com/?auto=login"
+                                        target="_blank">Log in<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="container flex title-content">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <h1 class="white">Press</h1>
+                            <h2 class="white no-margin">Let’s hear what people said about us.</h2>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="press-bg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="latest-news" class="bg-layers-bottom">
+            <div class="container p-0">
+                <div class="side-bar">
+                    <h3 class="white">Latest</h3>
+                </div>
+                <article class="article-item">
+                    <img src="../img/press/latest-news-small.png" alt="" class="article-img">
+                    <h3 class="article-title white">Can TrueLayer be the UK's first open banking unicorn?</h3>
+                    <p class="article-quote white">With new financial regulations comes great opportunity, and one London-based startup wants to be the middle man for the open banking era. By providing access to the newly opened data streams being released by major banks across Europe, TrueLayer wants to power fintech startups looking to build innovative financial applications for users.</p>
+                    <img src="../img/press/media-logo.svg" alt="" class="media-name">
+                    <label class="date white">Nov. 18<br>2019</label>
+                </article>
+            </div>
+        </section>
+        <section id="other-press-article">
+            <div class="sort-bar flex align-item-center">
+                <p class="mb-0 mr-3 azure">sort by</p>
+                <button type="button" class="btn platforms uses btn-outline-azure">Date</button>
+                <button type="button" class="btn btn-outline-azure uses">Sources</button>
+                <button type="button" class="btn platforms uses btn-outline-azure">Tag</button>
+            </div>
+            <hr class="m-0 w-70">
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 mb-5">
+                        <a href="https://www.computerweekly.com/blog/Fintech-makes-the-world-go-around/TrueLayer-set-to-expand-its-services-through-Visa-network" class="article-item small">
+                            <h3 class="article-title">TrueLayer set to expand its services through Visa network</h3>
+                            <p class="article-quote">It is almost a year ago when I first spoke with fintech TrueLayer as part of my Fintech interview series, and the company is making significant progress.</p>
+                            <img src="../img/press/media-logo2.png" alt="" class="media-name">
+                            <label class="date">Oct. 30<br>2019</label>
+                            <div class="tag">
+                                <span>#visa</span>
+                                <span>#collaboration</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 mb-5">
+                        <a href="https://thefintechtimes.com/truelayer-australia/" class="article-item small">
+                            <h3 class="article-title">TrueLayer Embarks on Global Expansion with New APAC Hub in Australia</h3>
+                            <p class="article-quote">TrueLayer, the provider of financial APIs, has announced that it is establishing a presence in Australia.</p>
+                            <img src="../img/press/media-logo3.svg" alt="" class="media-name">
+                            <label class="date">Oct. 23<br>2019</label>
+                            <div class="tag">
+                                <span>#expansion</span>
+                                <span>#australia</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 mb-5">
+                        <a href="https://techcrunch.com/2019/10/29/truelayer-the-open-banking-api-provider-discloses-investment-and-partnership-with-visa/" class="article-item small">
+                            <h3 class="article-title">TrueLayer’s Payments API lets companies accept payments through Open Banking</h3>
+                            <p class="article-quote">Open Banking and PSD2 — groundbreaking regulation from the U.K. and European Union, respectively — set out to fix what politicians and civil servants perceived as a malfunctioning financial services market, evidenced most prominently by the banking crisis in 2008.</p>
+                            <img src="../img/press/media-logo4.png" alt="" class="media-name">
+                            <label class="date">Jan. 29<br>2019</label>
+                            <div class="tag">
+                                <span>#PSD2</span>
+                                <span>#openbanking</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12 col-lg-6 mb-5">
+                        <a href="https://www.businessinsider.com/tencent-and-temasek-invest-in-british-fintech-truelayer-2019-6?r=US&IR=T" class="article-item small">
+                            <h3 class="article-title">UK startup fintech TrueLayer just won funding from China's Tencent and Singaporean wealth fund Temasek</h3>
+                            <p class="article-quote">UK fintech TrueLayer is receiving funding from Chinese financial giant Tencent and Singaporean sovereign wealth fund Temasek. </p>
+                            <img src="../img/press/media-logo5.png" alt="" class="media-name">
+                            <label class="date">Oct. 23<br>2019</label>
+                            <div class="tag">
+                                <span>#funding</span>
+                                <span>#Tencent</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- Back to top -->
+        <a id="backToTop" title="Back to top" href="#" style="display: none;">Back to top<i class="fa fa-arrow-up"
+                style="margin-left:8px;"></i></a>
+        <!-- Footer -->
+        <footer>
+            <div id="main-footer" class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-6 col-12" id="newsletter-pre" style="display: block;">
+                            <h3>Please stay in touch!</h3>
+                            <p>Don’t miss new features, market coverage, regulations, and more.</p>
+                            <span class="legal-note">By clicking "Sign me up" you agree to our <a
+                                    href="/privacy">Privacy Policy</a>.</span>
+                        </div>
+                        <div class="col col-lg-12 col-12 text-center" id="newsletter-done" style="display: none;">
+                            <i class="fa fa-check" aria-hidden="true"></i>
+                            <h3>All done!</h3>
+                            <p>Thanks for you interest in our newsletter.
+                                <br>You will hear from us soon!</p>
+                        </div>
+                        <div class="col col-lg-6 col-12">
+                            <form id="newsletter">
+                                <div class="row">
+                                    <div class="col-lg-8">
+                                        <input type="email" required="" name="email" class="form-control"
+                                            placeholder="Your email here...">
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <button type="submit" class="btn btn-outline-azure azure" href="#"
+                                            onclick="ga('send', 'event', 'Newsletter Sign up', 'Sign me up click', 'Footer');">Sign
+                                            me up</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row footer-menu">
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <p>Products</p>
+                            <ul>
+                                <li>
+                                    <a href="/data-api">Data API</a>
+                                </li>
+                                <li>
+                                    <a href="/payments-api">Payments API</a>
+                                    <span class="beta"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <p>Public Policy</p>
+                            <ul>
+                                <li>
+                                    <a href="/psd2">PSD2</a>
+                                </li>
+                                <li>
+                                    <a href="/openbanking">Open Banking</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <p>Resources</p>
+                            <ul>
+                                <li>
+                                    <a href="http://docs.truelayer.com/">Documentation</a>
+                                </li>
+                                <li>
+                                    <a href="http://support.truelayer.com" target="_blank">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="https://truelayer.zendesk.com/hc/en-us/requests/new"
+                                        target="_blank">Tickets</a>
+                                </li>
+                                <li>
+                                    <a href="https://status.truelayer.com" target="_blank">Status page</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <p>Company</p>
+                            <ul>
+                                <li>
+                                    <a href="/contact"
+                                        onclick="ga('send', 'event', 'Contact us', 'Contact us click', 'Footer', {nonInteraction: true});">Contact
+                                        us</a>
+                                </li>
+                                <li>
+                                    <a href="/about">About us</a>
+                                </li>
+                                <li>
+                                    <a href="https://blog.truelayer.com/" target="_blank">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="https://truelayer.workable.com" target="_blank">Jobs</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <p>Legal</p>
+                            <ul>
+                                <li>
+                                    <a href="/privacy">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="/tos">AIS Customer ToS</a>
+                                </li>
+                                <li>
+                                    <a href="/tos-pis">PIS Customer ToS</a>
+                                </li>
+                                <li>
+                                    <a href="/enduser_tos">End User ToS</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-6">
+                            <p>Consumers</p>
+                            <ul>
+                                <li>
+                                    <a href="https://psu.truelayer.com" target="_blank">Consumer Portal</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="sub-footer" class="container-fluid">
+                <div class="row text-center">
+                    <div id="social" class="container">
+                        <div class="col-lg-12">
+                            <a href="https://www.facebook.com/TrueLayerAPI/" target="_blank"
+                                class="social-link facebook"></a>
+                            <a href="https://twitter.com/truelayer" target="_blank" class="social-link twitter"></a>
+                            <a href="https://blog.truelayer.com/" target="_blank" class="social-link medium"></a>
+                            <a href="https://www.linkedin.com/company/17954388/" target="_blank"
+                                class="social-link linkedin"></a>
+                            <a href="https://www.youtube.com/channel/UCgCJvUI1ViLmlNzwPoRjcTw" target="_blank"
+                                class="social-link youtube"></a>
+                            <a href="https://www.producthunt.com/posts/truelayer" target="_blank"
+                                class="social-link producthunt"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <p>
+                            <script type="text/JavaScript">
+                                var theDate= new Date();
+                  document.write("© TrueLayer Limited " + theDate.getFullYear());
+                  </script>© TrueLayer Limited 2019
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </footer>
+    </div>
+</body>
+
+</html>

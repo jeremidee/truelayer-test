@@ -1,0 +1,15 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 41 41">
+    <defs>
+        <linearGradient id="linear-gradient" x1="56.53" y1="89.6" x2="66.53" y2="99.6"
+                        gradientTransform="translate(-41.66 -76.16)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#3b5998"/>
+            <stop offset="1" stop-color="#369"/>
+        </linearGradient>
+    </defs>
+    <title>facebook</title>
+    <circle id="Oval-5" cx="20.5" cy="20.5" r="20" style="fill:#fff;stroke:#ecf0f1"/>
+    <path id="f"
+          d="M21.93,30.14V21.57h2.86L25.5,18H21.93V16.57a1.89,1.89,0,0,1,2.14-2.14H25.5V10.86H22.64c-2.62,0-4.28,2.06-4.28,5V18H15.5v3.57h2.86v8.57Z"
+          transform="translate(0 0)" style="fill:url(#linear-gradient)"/>
+</svg>

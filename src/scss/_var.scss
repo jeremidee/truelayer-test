@@ -1,0 +1,26 @@
+// ==== VARIABLE ====
+$sun:#F7AB1B;
+$kashmirBlue:#44689A;
+$secBlue:#058ed8;
+
+
+
+// ==== MIXIN ====
+
+@mixin fontawesomePseudo {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+}
+
+@mixin imgBackground($path,$size) {
+    background-image: url($path);
+    background-size: $size;
+    background-position: center center;
+    background-repeat: no-repeat;
+}

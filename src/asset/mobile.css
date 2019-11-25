@@ -1,0 +1,684 @@
+/* Navbar mobile ----------- */
+
+
+#navbarMobile {
+    background: #093554;
+    z-index: 1005;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    padding:20px 0;
+    z-index: 2100;
+}
+
+#navbarMobile .btn  {
+    font-size:8pt;
+    padding:8px 10px;
+    margin:0;
+}
+
+#navbarMobile img {
+    width:90%;
+}
+
+#navbarMobile.toggled {
+    width: 250px;
+    padding:20px;
+}
+
+#navbarMobile .navbar-brand {
+    margin-bottom: 50px;
+}
+#navbarMobile ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#navbarMobile ul li  {
+    padding: 10px 0;
+    line-height: 15pt;
+}
+
+#navbarMobile ul li a {
+    color: #ffffff;
+    font-size:15pt;
+}
+
+#navbarMobile ul li a.active {
+    color: #f7ab1b;
+    font-size:15pt;
+    text-decoration: none;
+}
+
+#navbarMobile ul li a span.menu-collapse {
+    display: inline-block;
+}
+
+#navbarMobile ul li a span.menu-collapse i {
+    color: #f7ab1b;
+    font-size: 10pt;
+    margin-left: 5px;
+}
+
+#navbarMobile ul.submenu {
+    padding-left: 15px;
+}
+
+#navbarMobile ul.submenu li  {
+    padding:5px 0;
+}
+
+#navbarMobile ul.submenu li a {
+    font-size:12pt;
+    opacity:0.7;
+}
+
+
+#navbarMobile ul.submenu li span {
+    font-size:12pt;
+    opacity:0.7;
+    color: #ffffff;
+}
+
+li > a + span.beta::after {
+    background-color: transparent;
+    color: inherit;
+    opacity: 0.7;
+    font-size: 5pt;
+    margin-left: 5px;
+    padding: 0;
+    position: relative;
+    top: -10px;
+}
+
+li > a.active + span.beta::after {
+    color:#f7ab1b;
+}
+
+
+/* Everything mobile (portrait and landscape) ----------- */
+@media only screen
+and (max-device-width : 1024px), (max-width : 992px) {
+    html {
+        overflow-x:hidden;
+    }
+
+    footer #main-footer ul {
+        font-size:12pt;
+    }
+
+    nav.navbar {
+        padding:20px;
+    }
+    #main-footer .row .col {
+        text-align: center;
+    }
+
+    #sub-menu ul li a {
+        font-size:13pt;
+    }
+
+    #overview {
+        text-align: center;
+    }
+
+    .negative-offset {
+        margin:0;
+    }
+
+    .bg-layers-bottom.inside-bg-layers-top, .article-page #crop-header{
+        padding:0;
+    }
+
+    .pis-logo {
+        margin-bottom: 20px;
+    }
+    
+    #section-schedule-marks .mb-150 {
+        margin-bottom: 0;
+    }
+
+    .radio-btn {
+        border-left: 1px solid #dddddd;
+       height: 39px;
+    }
+
+    .radio-btn:first-child {
+        height: 39px;
+    }
+
+    .radio-btn:not(:last-child) .label-radio {
+        border-left: none;
+    }
+    
+    svg.pattern {
+        min-height: 2000px;    
+        }
+
+
+
+
+
+    /*********** Payments - How it works? ************/
+
+    .yellow-cubes::before, .shape-bg::after, .description-use {
+        display: none;
+    }
+
+    .wrap-content-how h5 {
+        color: #2d2d2d;
+    }
+    
+ 
+
+    .wrap-content-how {
+        height: auto;
+        width: 100%;
+    }
+
+    #bar {
+        display: none;
+    }
+
+    .description-mobile {
+        display: block;
+    }
+
+    .vertical-dotted-line {
+        display: block;
+        height: 30px;
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        left: 49%;
+        top: -10px;
+        border-left: 5px dotted #d3e6fe;
+    }
+
+    .initiate-icon {
+        /* background: transparent url(../img/icons/initiate-active.svg) no-repeat center/ 130px; */
+        opacity: 1;
+    }
+
+
+   .authorise-icon {
+       /* background: transparent url(../img/icons/authorise-active.svg) no-repeat center/ 130px; */
+       opacity: 1;
+
+   }
+
+.monitor-icon {
+    /* background: transparent url(../img/icons/monitor-active.svg) no-repeat center/ 130px; */
+    height: 100px;
+    opacity: 1;
+
+}
+
+.receive-icon {
+    /* background: transparent url(../img/icons/receive-active.svg) no-repeat center/ 130px; */
+    height: 100px;
+    opacity: 1;
+    transition: 0.1s;
+}
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (max-device-width : 480px) {
+    .hiring h6 {
+        font-size:13pt;
+        padding-top:15px;
+    }
+
+    #hero .hero-img-pc {
+        display: none;
+    }
+
+    .title-content h1.beta {
+        font-size: 35pt;
+        padding-right: 40px;
+    }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+    #pricing .box {
+        padding:15px;
+    }
+
+    #about-us h1 {
+        font-size:32pt;
+    }
+
+    form .btn-select ul li {
+        font-size:10pt;
+    }
+
+    .navbar {
+        margin-bottom: 50px;
+    }
+
+    .hiring h6 {
+        font-size:20pt;
+        top: 10%;
+        left: 5%;
+    }
+   
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    
+    h3 {
+        font-size:15pt;
+    }
+
+    h1 {
+        font-size:30pt;
+    }
+
+    .hiring h6 {
+        font-size:11pt;
+        top: 7%;
+        left: 3%;  
+    }
+    
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    p {
+        font-size:15pt;
+    }
+
+    #things-we-do ul {
+        font-size:18pt;
+    }
+
+    #developer-console {
+        background: #ffffff;
+    }
+}
+
+/* iPads Pro (portrait) ----------- */
+@media only screen
+and (min-device-width: 1024px)
+and (orientation:portrait) {
+    .hiring h6 {
+        font-size:11pt;
+        top: 7%;
+        left: 3%;  
+    }
+    #developer-console {
+        /* background: #ffffff url("../img/console-layers-2.svg")  no-repeat 140% top / 65%; */
+    }
+}
+
+/* All Mobile (landscape) ----------- */
+@media only screen
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+    .navbar .container {
+        max-width: 100%;
+        padding: 0 40px;
+    }
+
+    .article-page section {
+        padding:100px 0;
+    }
+
+    #quick-links, .hero-img-logo, .hero-img-shadow {
+        display: none;
+    }
+
+    #hero .hero-img-pc {
+        height: 120%;
+        position: absolute;
+        width: 55vw;
+        bottom: -15vh;
+    }
+
+    section {
+        padding: 50px 0;
+    }
+
+    #data-api .data-api-img, #australia .australia-img {
+        background: transparent;
+    }
+
+    #use-cases {
+        background: #eeeeee;
+    }
+
+    .use-cases-payments, .use-cases-australia {
+        background: #fff;
+    }
+
+    #hero .home-title .col-centered {
+        margin:0;
+    }
+
+    #hero .home-title {
+        padding-top:0;
+        margin:0 20px;
+    }
+
+}
+
+/* All Mobile (portrait) ----------- */
+@media only screen
+and (max-device-width : 1023px)
+and (orientation : portrait) {
+
+    section {
+        padding:100px 0;
+    }
+
+    p.small {
+        font-size:12pt;
+    }
+
+    #hero .home-title {
+        padding-right:20px;
+        padding-left:20px;
+    }
+
+    #hero .hero-img-pc, #hero .hero-img-logo, #hero .hero-img-shadow {
+        display: none;
+    }
+
+    #identity-and-payment #identity-transaction-data {
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding-bottom:50px;
+        margin-bottom:50px;
+    }
+
+    #dev-console-container {
+        display: none;
+    }
+    #customers .col-md-4 {
+        margin-bottom:50px;
+    }
+
+    #data-api .data-api-img, #australia .australia-img {
+        background: none;
+    }
+
+    #payments-api .payments-api-img {
+        background: none;
+    }
+
+    .cookie-bar {
+        width:200px;
+    }
+
+    #regulation-overview .row .color-box {
+        margin:10px 0;
+    }
+
+    section p.header-paragraph {
+        font-size:16pt;
+    }
+
+    #data-api .title-content {
+        min-height:50vh;
+    }
+
+    #use-cases {
+        background: #eeeeee;
+    }
+
+    #built-for-developers .col-xl-6:nth-child(2) {
+        display: none;
+    }
+
+    #investors .col-lg-6 {
+        margin:30px 0;
+    }
+
+    .photos {
+        border:none;
+    }
+
+    #TL-data .col-lg-3:nth-child(3,4) {
+        margin:15px 0;
+    }
+
+    #quick-links {
+        display: none;
+    }
+
+    #faq-support #live-support {
+        border:none;
+        margin-bottom:50px;
+    }
+
+    #data-api {
+        text-align: center;
+    }
+
+    #payments-api {
+        text-align: center;
+    }
+
+    #sub-menu ul {
+        text-align: center;
+        padding:0;
+    }
+
+    #sub-menu ul li {
+        margin:0 auto;
+    }
+
+    #main-footer .col-lg-2 {
+        margin-top:30px;
+    }
+
+    #sign-up {
+        text-align: center;
+    }
+
+    #sign-up span {
+        margin-bottom: 15px;
+    }
+
+    .global-flags {
+        justify-content: center !important;
+    }
+
+
+}
+
+/* All Mobile (landscape) ----------- */
+@media only screen
+and (max-device-width : 1023px)
+and (orientation : landscape) {
+    #dev-console-container {
+        display: none;
+    }
+    #developer-console {
+        background: #ffffff;
+    }
+}
+
+/* All Smaller Mobile (portrait) ----------- */
+@media only screen
+and (max-device-width : 575px)
+and (orientation : portrait) {
+
+    section, footer #main-footer, #about-us, #support {
+        padding:60px 0;
+    }
+
+    #hero {
+        height:auto;
+    }
+
+    .navbar-brand img {
+        height:45px;
+    }
+
+    #things-we-do ul {
+        font-size:20pt;
+    }
+
+    #identity-and-payment-container {
+        background: #ffffff;
+    }
+
+    #identity-and-payment {
+        border: none;
+    }
+
+    #developer-console {
+        /* background: #ffffff url(../img/console.png) no-repeat top right / 40%; */
+    }
+
+    section p.header-paragraph {
+        font-size:12pt;
+    }
+
+    #data-api .title-content {
+        min-height:80vh;
+    }
+
+    #features .col-12 {
+        text-align: center;
+    }
+
+    #overview .col-lg-4 {
+        margin:10px 0;
+    }
+
+    form .btn-select ul li {
+        font-size:10pt;
+    }
+
+    #about-us h1 {
+        font-size:30pt;
+    }
+
+    #TL-data .col-lg-3 {
+        margin:10px 0;
+        text-align: center;
+    }
+
+    #TL-data .data-box {
+        width:100%;
+    }
+
+    #TL-data .row.mt-5 {
+        margin-top:0;
+    }
+
+    #main-footer .footer-menu, #main-footer hr {
+        display: none;
+    }
+
+    .hiring h6 {
+        font-size:10pt;
+        padding-left: 15px;
+    }
+    #developer:before,
+    #enterprise:before {
+        display:none;
+    }
+}
+
+
+
+/* All Smaller Mobile (landscape) ----------- */
+@media only screen
+and (max-device-width : 991px)
+and (orientation : landscape) {
+
+    #hero .hero-img-pc {
+        right:0;
+        width:45vw;
+    }
+
+    #hero .home-title {
+        padding-top:0;
+        margin:0 20px;
+    }
+}
+
+/* All Smaller Mobile (landscape) ----------- */
+@media only screen
+and (max-device-width : 813px)
+and (orientation : landscape) {
+
+    #hero .hero-img-pc {
+        display: none;
+    }
+
+    #hero {
+        height:auto;
+    }
+
+    #customers img {
+        padding:20px 0;
+    }
+}
+
+/* Everything portrait ----------- */
+@media only screen
+and (orientation : portrait) {
+
+    #hero .hero-img-pc, #hero .hero-img-logo, #hero .hero-img-shadow {
+        display: none;
+    }
+
+    #hero .hero-img {
+        -webkit-background-size: 300%;
+        background-size: 300%;
+    }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+    /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+}
+
+/* Fix for resized desktop version */
+@media (max-width : 1024px) {
+   #use-cases {
+       background: #eeeeee;
+   }
+    
+    .use-cases-data, .use-cases-payments, .use-cases-australia {
+        background: transparent;
+    }
+}
